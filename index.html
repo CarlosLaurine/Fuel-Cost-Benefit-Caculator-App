@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<!--changing html code language patterns to BR-Portuguese -->
+<html lang="pt-br">
+<head>
+	<title>Flex Fuel Calculator</title>
+<!--Setting utf-8 Pattern-->>	
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<h1>Flex Fuel Calculator</h1>
+
+<!--Setting an id status to the initial image in order to 
+	access and modify it through DOM at the 
+	Javascript code functions
+-->	
+	<img src="Imgs/neutral.png" alt="Flex Calculator" id="status">
+
+<!--Adding a form name to make value tracking possible at the JS document-->
+
+	<form name="formFlex">
+
+		<!--Adding input names to also make value tracking possible at the JS document-->
+
+		<input type="text" placeholder="Ethanol" size="19" name="priceEthanol">
+		<input type="text" placeholder="Gasoline" size="19" name="priceGasoline">
+
+		<!--LineBreaks to make the interface more organized-->
+		<br><br>
+
+		<!--Linking the button to the JS function calculate() throughout the onclick statement-->
+
+		<input type="button" value="Calculate Cost-Bennefice" onclick="calculate()">
+		
+		<br><br>
+		
+		<!--Linking the Reset to the JS function calculate() throughout the onclick statement-->
+
+		<input type="reset" value="Clean" onclick="resetImg()">
+
+	</form>
+
+<!--Linking the HTML document to the external JS calcflex.js document through script's src statement-->
+<script src="calcflex.js"></script>
+</body>
+</html>
